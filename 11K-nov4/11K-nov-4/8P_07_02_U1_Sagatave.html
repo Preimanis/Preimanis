@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<script>
+var datums;
+var sekunde = 1000;
+var tid = 0;
+function veidot() {
+    f.logs.value = new Date();
+    tid = window.setTimeout("veidot()",sekunde);
+}
+</script>
+<body onload="start(document.datums);" >
+<h1 id="id1">Pulkstenis</h1>
+<form name="datums" action="post">
+    <input type="text" name="logs" size=50>
+</form>
+<script>
+function start(x) {
+    f = x;
+    tid = window.setTimeout("veidot()",sekunde);
+}
+function cleartid() {
+    window.clearTimeout(tid);
+}
+</script>
+<script>
+ alert('Edgars Preimanis');
+ </script>
+ <script>
+document.write("<p><b>1.Sniega māte, Sniega māte</b></p>");//Treknrakst
+document.write("<p><i>2.Sniega māte, Sniega māte,<i></p>");//Slīpraksts
+document.write("<p><sub>3.Purin savas villainītes,</sub></p>");//apakšraksts
+document.write("<p><sup>4.Lai nāk sniegi virs zemītes,</sup></p>");//augsŗaksts
+document.write("<p><u>5.Lai bāliņi mežā brauc.</u></p>");//pasvitrojums
+
+document.write("<p><mark>6.вввввввввв.</mark></p>");//izcelšana
+document.write("<p><small>7.бббббббб.</small></p>");//mazs teksts
+document.write("<p><s>8.ааааааааааа.</s></p>");//pārsvitrojums
+</script>
+<script>
+document.write("<p>9.Fona krāsa balta</p>"); //Fona krāsa White- balta
+document.getElementById("id1").textContent="Часы";
+setTimeout("document.bgColor = 'BlueViolet'", 2000); 
+setTimeout("document.bgColor = 'DarkstateBlue'", 4000);
+setTimeout("document.bgColor = 'RosyBrown'", 6000);
+setTimeout("document.bgColor = 'DarkGoldenRod'", 8000);
+setTimeout("document.bgColor = 'Sienna'", 10000);
+setTimeout("document.bgColor = 'Olive'", 12000)
+setTimeout("document.bgColor = 'DarkGreen'", 14000);
+setTimeout("document.bgColor = 'MediumSeaGreen'", 16000);
+setTimeout("document.bgColor = 'DarkTurquoise'", 18000);
+</script>
+</body>
+</html>
